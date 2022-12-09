@@ -295,7 +295,6 @@ ul.todo li .buttons button {
   position: relative;
   padding: 5px 0 5px 5px;
   font-size: 1rem;
-  /* cursor: pointer; */
 }
 ul.todo li .buttons .remove{
   color: #aaa;
