@@ -282,6 +282,10 @@ ul.todo#completed:after {
   color: #aaa;
 }
 
+ul.todo li .buttons{
+  cursor: pointer;
+}
+
 ul.todo li .buttons button {
   background: none;
   border: 0px;
@@ -291,6 +295,7 @@ ul.todo li .buttons button {
   position: relative;
   padding: 5px 0 5px 5px;
   font-size: 1rem;
+  /* cursor: pointer; */
 }
 ul.todo li .buttons .remove{
   color: #aaa;
@@ -305,7 +310,7 @@ ul.todo li .buttons .complete{
 }
 
 ul.todo li .buttons .complete:hover{
-  color: #25b99a;
+  color: green;
 }
 
 ul.todo#todo li .buttons .complete .fas{
