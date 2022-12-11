@@ -5,6 +5,7 @@ let services = new Services();
 let doTask = [];
 let doneTask = [];
 
+
 let addTask = () => {
     let task = document.getElementById("newTask").value;
     if(task === ""){
@@ -15,6 +16,7 @@ let addTask = () => {
         services.luuCongViec(doTask)
         .then(()=>{
             getTask();
+            document.getElementById("newTask").value = '';
         });
     }
 }
@@ -44,8 +46,6 @@ let chiaTask = (data) => {
             doneTask.push(task);
         }
     }
-    console.log(doTask);
-    console.log(doneTask);
 }
 let hienThiTasks = (arr, type) => {
     let content = '';
